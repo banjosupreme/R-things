@@ -1,9 +1,11 @@
+#this function plots transition probabilities for placing in La Liga and the premier league from one year to the next
+
 plotTransitions <- function(firstYear=0, lastYear=21)
  {
 
     library(ggplot2)
     library(dplyr)
-    setwd("C:/daryn/sportsproj/data/FootballLeagues/")
+    #assuming directory is correct and the files are named as below
     PL <- read.csv("PremierLeague.csv", stringsAsFactors = FALSE)
     LL <- read.csv("LaLiga.csv", stringsAsFactors = FALSE)
     
